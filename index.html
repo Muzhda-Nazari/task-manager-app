@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Task Manager App</h1>
+      <p>Simple, clean, and professional task tracking.</p>
+    </header>
+
+    <section class="card">
+      <form id="taskForm" class="task-form">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Add Task</button>
+      </form>
+
+      <div class="toolbar">
+        <span id="taskCount">0 tasks</span>
+        <button type="button" id="clearCompleted">Clear Completed</button>
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
